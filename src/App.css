@@ -1,38 +1,91 @@
 .App {
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* PROJECTS PAGE */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.projectpage-wrapper {
+  padding: 0 0 3rem;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100vw;
+  min-height: 100vh;
+  background: rgb(2,0,36);
+  background: linear-gradient(137deg, rgba(2,0,36,1) 0%, rgb(7, 66, 91) 35%, rgb(6, 39, 46) 100%);
+}
+
+.project-background-container {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.project-thumbnail {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 2cm;
+}
+
+.project-date {
+  padding: 1.4rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+
+}
+
+.setprogress-wrapper {
+  margin: 3rem auto;
+  padding: 1rem 0;
+}
+
+.input-progress {
+  width: 60vw;
+  margin: .8rem auto;
+}
+
+.bottombar-btns-wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: black;
+  margin: 1rem 0 0;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.bottombar-btns-wrapper > button {
+  margin: auto .6rem;
+}
+
+/* progress tree --- */
+
+.progress-tree {
+  width: 100%;
+  min-height: 30vh;
+  overflow: hidden;
+}
+
+/* EDIT PAGE */
+
+.editpage-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #282c34;
   color: white;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+::-webkit-scrollbar { display: none; }

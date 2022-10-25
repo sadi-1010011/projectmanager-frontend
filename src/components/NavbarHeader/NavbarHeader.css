@@ -1,0 +1,65 @@
+/* HEADER */
+
+
+.header-gradient {
+	background: rgb(2,0,36);
+background: linear-gradient(22deg, rgb(8, 3, 103) 0%, rgb(18, 92, 124) 35%, rgb(41, 118, 133) 100%);
+}
+
+.brand-title {
+	color: wheat;
+	font-size: 1.6rem;
+	letter-spacing: -1px;
+}
+
+.basket-wrapper {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.basket-btn {
+	position: relative;
+	display: inline-block;
+	border-radius: 6px;
+	margin: 0 6px;
+	transition: 0.23s;
+}
+
+.basket-btn > a > img {
+	width: 36px;
+	height: auto;
+	vertical-align: middle;
+}
+
+
+/* extra in-component styles.. */
+
+.active-tab, .active-tab > .nav-link {
+	color: #fff !important;
+}
+
+.nav-link {
+	text-transform: capitalize;
+}
+
+a, a:hover { text-decoration: none; }
+
+/* FLOATING SETTINGS ICON */
+
+@media screen and (max-width: 992px ) {
+	.icons-wrapper {
+		position: absolute;
+		width: 1em;
+		height: 1em;
+		top: calc(1rem + 0.3125rem + 0.8rem - 0.5rem);
+		right: 2em;
+		opacity: 0.25;
+		transition: opacity 0.3s;
+	}
+	.icons-wrapper:hover { opacity: 1;}
+
+}

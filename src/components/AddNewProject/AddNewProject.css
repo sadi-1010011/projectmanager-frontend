@@ -1,0 +1,101 @@
+
+.addprogress-wrapper {
+    display: block;
+    margin: auto;
+    width: 2rem;
+    padding: 1rem 0;
+    /* background-color: blue; */
+  }
+  
+  .plusicon-wrapper {
+    display: inline-block;
+    margin: auto;
+    background-color: red;
+    border: 2px dotted black;
+    border-radius: 50%;
+  }
+  
+  .plusicon-wrapper > img {
+    width: 1.3rem;
+    height: auto;
+    margin: 5px;
+  }
+
+  /* ADDPROGRESSCARD */
+
+  .updateinput-card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 70%; */
+    padding: 1.5rem 1rem;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(14, 18, 85);
+    border-radius: 12px;
+  }
+
+  .project-state {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px 1rem 10px;
+  }
+
+  .projectstate-btn {
+    line-height: 1.7;
+  }
+  
+  .active-projectstate {
+    border-bottom: 2px solid greenyellow;
+  }
+
+  .updateinput-title {
+    text-transform: capitalize;
+  }
+
+  #custom-fileupload {
+    opacity: 0.3;
+  }
+
+  .custom-uploadlabel {
+    display: flex;
+    margin: 8px auto;
+    padding: 5px 6px;
+    border: 1px solid white;
+    border-radius: 8px;
+  }
+
+  .updateinput-description {
+    width: 100%;
+    padding: 14px 6px;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+  }
+
+  .updateinput-date {
+    margin: 0.7rem auto;
+    width: 40%;
+    padding-bottom: 8px;
+    color: white;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+  }
+
+  .btn-container {
+    margin: 8px 0;
+  }
+
+  .updateinput-btn {
+    display: block;
+    width: 80%;
+    margin: 6px auto;
+    text-transform: capitalize;
+    font-weight: bold;
+  }

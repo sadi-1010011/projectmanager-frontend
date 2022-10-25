@@ -1,0 +1,99 @@
+/* project card */
+
+.product-card {
+	color: white;
+	background-color: transparent;
+	margin: 3rem;
+	border-radius: 12px;
+	overflow: hidden;
+	transition: 0.6s;
+	box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+
+.product-card:hover {
+	background-color: #3b4e5ccc;	
+}
+
+.product-image {
+	width: 100%;
+	height: auto;
+	opacity: 0.68;
+	/* border-bottom-left-radius: 22px; */
+	/* border-bottom-right-radius: 6px; */
+}
+
+.progress-bar {
+	padding: 1px 0;
+	border-radius: 3px;
+	background-color: black;
+}
+
+.progress-bar:hover .progress-percent { padding: 5px; }
+
+.progress-percent {
+	display: inline-block;
+	width: 1%;
+	padding: 1px;
+	font-size: 12px;
+	font-weight: 500;
+	color: black;
+	border-radius: 2px;
+	background-color: yellowgreen;
+	transition: width 1.2s ease, padding .23s linear;
+}
+
+.progress-percent:hover, .progress-percent:active {
+	padding: 5px;
+}
+
+.product-title {
+	text-transform: capitalize;
+	padding: 1.8rem 0 0rem 0;
+}
+
+.product-description {
+	margin: 0;
+	padding: 0 2rem;
+	color: rgb(119, 110, 110);
+	line-height: 1.7;
+	transition: color 0.2s;
+}
+
+.product-description:hover {
+	color: white;
+}
+
+.product-price {
+	color: orange;
+	font-size: 1.4rem;
+	display: block;
+	padding-top: 0.5rem;
+	padding-bottom: 0.4rem;
+	font-weight: 500;
+}
+
+/* .product-price:after {
+	content: '$';
+} */
+
+.buy-btn {
+	color: lightgrey;
+	background-color: #3b4e5ccc;
+	text-transform: capitalize;
+	border: none;
+	border-radius: 18px;
+	margin: 0.2rem 0 1.6rem 0;
+	padding: 6px 2rem;
+	transition: 0.3s;
+	box-shadow:0 3px 2px 0 rgba(0,0,0,0.2),0 3px 8px 0 rgba(0,0,0,0.19) !important;
+}
+
+.buy-btn:hover {
+	color: #fff;
+	background-color: orange;
+}
+
+.buy-btn:active {
+	color: grey;
+	background-color: #fcefee;
+}

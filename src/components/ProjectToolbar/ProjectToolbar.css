@@ -1,0 +1,49 @@
+
+.project-toolbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: .8rem 1rem;
+    background-color: rgba(51, 35, 71, 0.982);
+}
+
+/* TOOLBAR ICON */
+
+.toolbar-icon {
+    width: 1.4rem;
+    height: auto;
+}
+
+.toolbar-btn {
+    background-color: transparent;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    transition: .2s background-color;
+}
+
+/* DELETE BTN */
+
+.project-delete-btn:hover {
+    background-color: red;
+}
+
+.project-delete-btn:active {
+    background-color: maroon;
+    color: aliceblue;
+}
+
+
+/* EDIT BTN */
+
+.project-edit-btn:active {
+    background-color: aqua;
+}
+
+
+/* PROJECT TITLE */
+
+.project-title {
+    text-transform: capitalize;
+}

@@ -1,0 +1,22 @@
+  
+.treeLine {
+    position: relative;
+    display: block;
+    width: 2px;
+    height: 100px;
+    left: calc(50% - 1px);
+    border-radius: 20%;
+    background-color: red;
+  }
+  
+  .treeLineEnd {
+    position: absolute;
+    display: block;
+    left: -4px;
+    bottom: -14px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px dashed red;
+    background-color: maroon;
+  }
+  

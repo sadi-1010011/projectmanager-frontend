@@ -1,0 +1,37 @@
+
+.progress-card-wrapper {
+    margin: 1.5rem auto;
+    padding: .4rem 1rem;
+    
+}
+
+.progress-edit-icon {
+    display: block;
+    margin: 8px auto .5rem;
+    width: 1.4rem;
+    height: auto;
+    border-radius: 50%;
+    transition: background-color .14s ease-in, padding .5s ease;
+}
+
+.edit-progress-input {
+    display: block;
+    margin: auto;
+    padding: 0;
+    width: 70%;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: transparent;
+    color: darkgrey;
+    text-align: center;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+.active-edit {
+    width: 1.8rem;
+    padding: 4px;
+    background-color: rgb(67, 139, 81);
+}

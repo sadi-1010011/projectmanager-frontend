@@ -1,0 +1,8 @@
+/* project container styles */
+
+.products-section {
+	min-height: 80vh;
+	background-color: #485461;
+	background: rgb(2,0,36);
+background: linear-gradient(137deg, rgba(2,0,36,1) 0%, rgba(9,87,121,1) 35%, rgba(91,198,219,1) 100%);
+}

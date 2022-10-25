@@ -1,0 +1,14 @@
+
+.footer-wrapper {
+	background-color: black;
+}
+
+.socialmedia-icon {
+	padding: 0 3px;
+	overflow: hidden;
+}
+
+.socialmedia-icon > img {
+	width: 2rem;
+	height: auto;
+}

@@ -18,6 +18,7 @@ export default function CurrentPage() {
          )
          .then((response) => response.json())
          .then((actualData) => {
+            console.log(actualData);
              setProjects(actualData);
          })
          .catch((err) => {

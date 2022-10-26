@@ -19,6 +19,7 @@ export default function ProjectsPage() {
     const navigate = useNavigate();
     const sliderRef = useRef(null);
     const currentDate = moment().format('YYYY-MM-DD');
+    const myurl = 'https://ject-pro.herokuapp.com';
     
     // state
     const [project, setProject] = useState();
@@ -51,7 +52,7 @@ export default function ProjectsPage() {
     // delete project
     function deleteProject(id) {
         alert('deleting project: ', project.name);
-        axios.delete(`http://localhost:5000/projects/${id}`)
+        axios.delete(`${myurl}/projects/${id}`)
             .then(res => { 
                 console.log(res.data);
             })
@@ -135,7 +136,7 @@ export default function ProjectsPage() {
         alert('saving all changes');
         console.log('updated progress: ', progress);
         // update progress - post req to Backend
-        axios.post(`http://localhost:5000/projects/${projectId}/updateprogress`, { progress, progressbar })
+        axios.post(`${myurl}/projects/${projectId}/updateprogress`, { progress, progressbar })
             .then(res => { 
                 console.log(res.data);
             })

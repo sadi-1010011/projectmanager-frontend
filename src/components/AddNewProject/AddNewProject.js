@@ -18,6 +18,7 @@ export function AddProgressIcon({ togglecard }) {
 export function AddProjectCard({ editExistingProject=false, projectId='' }) {
 
     const navigate = useNavigate();
+    const myurl = 'https://ject-pro.herokuapp.com';
 
     // DEFAULT PROJECT
     const [newInput, setNewInput] = useState({
@@ -50,7 +51,7 @@ export function AddProjectCard({ editExistingProject=false, projectId='' }) {
                         description: projectData.description,
                         date: projectData.date,
                         type: projectData.type,
-                        progressbar: projectData.progressbar
+                        progressbar: projectData.progressbar || 5
                         // progress: {},
                         // pic: '',
                     });
@@ -144,12 +145,12 @@ export function AddProjectCard({ editExistingProject=false, projectId='' }) {
         if (editExistingProject && projectId) {
             // UPDATE
             console.log(newInput);
-            axios.post(`http://localhost:5000/projects/update/${projectId}`, newInput)
+            axios.post(`${myurl}/projects/update/${projectId}`, newInput)
                 .then(res => console.log(res.data));
                 navigate(-1); // previous page
         }
         else { // CREATE
-            axios.post(`http://localhost:5000/projects/create`, newInput)
+            axios.post(`${myurl}/projects/create`, newInput)
                 .then(res => console.log(res.data));
                 window.location.reload(); // reload page
         }
@@ -162,7 +163,8 @@ export function AddProjectCard({ editExistingProject=false, projectId='' }) {
             name: '',
             description: '',
             date: '',
-            type: 'Project'
+            type: 'Project',
+            progressbar: 5
             // progress: {},
             // pic: 'project1.png',
         });

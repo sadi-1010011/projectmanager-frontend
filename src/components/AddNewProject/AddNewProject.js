@@ -36,7 +36,7 @@ export function AddProjectCard({ editExistingProject=false, projectId='' }) {
     useEffect(() => {
         // console.log(projectId)
         if (editExistingProject && projectId) {
-            fetch(`/projects/${projectId}`,  {
+            fetch(`${myurl}/projects/${projectId}`,  {
                 headers : { 
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'

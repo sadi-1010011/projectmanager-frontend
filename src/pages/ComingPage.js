@@ -7,10 +7,12 @@ import ProjectContainer from "../components/ProjectContainer/ProjectContainer";
 export default function ComingPage() {
 
     const [projects, setProjects] = useState();
+    const myurl = 'https://ject-pro.herokuapp.com';
+
 
     useEffect(() => {
         // get data from BACKEND
-        fetch("/coming", {
+        fetch(`${myurl}/coming`, {
             headers : { 
               'Content-Type': 'application/json',
               'Accept': 'application/json'

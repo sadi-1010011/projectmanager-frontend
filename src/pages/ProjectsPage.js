@@ -32,7 +32,7 @@ export default function ProjectsPage() {
 
     // GET PROJECT FROM BACKEND
     useEffect(() => {
-        fetch(`/projects/${projectId}`, {
+        fetch(`${myurl}/projects/${projectId}`, {
             headers : { 
               'Content-Type': 'application/json',
               'Accept': 'application/json'

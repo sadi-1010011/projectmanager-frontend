@@ -6,10 +6,11 @@ import Footer from "../components/Footer/Footer";
 
 export default function CurrentPage() {
     const [projects, setProjects] = useState();
+    const myurl = 'https://ject-pro.herokuapp.com';
 
     useEffect(() => {
         // get data from BACKEND
-        fetch("/current", {
+        fetch(`${myurl}/current`, {
             headers : { 
               'Content-Type': 'application/json',
               'Accept': 'application/json'

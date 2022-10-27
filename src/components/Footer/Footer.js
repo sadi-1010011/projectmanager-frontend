@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import './Footer.css';
 import fbIcon from '../../img/facebook.png';
 import instaIcon from '../../img/instagram.png';
@@ -18,9 +17,7 @@ export default function Footer() {
 					<img src={fbIcon} alt="@fb" />
 				</span>
 				<span className="socialmedia-icon">
-					<Link to="https://www.instagram.com/sadiqt_/">
-						<img src={instaIcon} alt="@insta" />
-					</Link>
+					<img src={instaIcon} alt="@insta" />
 				</span>
 			</div>
 		</div>

@@ -151,8 +151,10 @@ export function AddProjectCard({ editExistingProject=false, projectId='' }) {
         }
         else { // CREATE
             axios.post(`${myurl}/projects/create`, newInput)
-                .then(res => console.log(res.data));
-                window.location.reload(); // reload page
+                .then(res => {
+                    console.log(res.data)
+                    window.location.reload(); // reload page
+                });
         }
     }
 
